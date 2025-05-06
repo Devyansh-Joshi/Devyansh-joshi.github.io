@@ -8,6 +8,8 @@
       name="description"
       content="A web page portfolio for Devyansh Joshi showcasing personal information and academic qualifications"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@600&display=swap"
@@ -29,8 +31,17 @@
     />
   </head>
   <body>
-    <div class="intro">
-      <h1 class="">
+    <section class="intro" id="0">
+      <div class="nav">
+        <ul>
+          <li><a href="#0" class="nav-link">Home</a></li>
+          <li><a href="#1" class="nav-link">Education</a></li>
+          <li><a href="#2" class="nav-link">Work</a></li>
+          <li><a href="#3" class="nav-link">Project</a></li>
+          <li><a href="#4" class="nav-link">Skills</a></li>
+        </ul>
+      </div>
+      <h1>
         Hello, This is <span class="font-bold">Devyansh Joshi.</span> I am a
         <span class="font-bold">Software engineer</span> with expierience in
         ReactJS and Python
@@ -46,11 +57,14 @@
           LinkedIn
           <i class="fab fa-linkedin"></i></button
       ></a>
-    </div>
+      <div class="mail">
+        <h3>joshidevyansh2105@gmail.com</h3>
+      </div>
+    </section>
     <main class="background-info">
       <div class="vertical-line"></div>
       <h2>My Education</h2>
-      <section class="education">
+      <section class="education" id="1">
         <span class="clg-education">
           <h3>
             <span class="font-bold">Bachelor in Computer Science.<br /></span>
@@ -76,7 +90,7 @@
       </section>
       <div class="vertical-line"></div>
       <h2>Work Expierience</h2>
-      <section class="work">
+      <section class="work" id="2">
         <h3>
           <span class="font-bold">Afame Technologies.<br /></span>
           Intern - Remote<br />
@@ -91,7 +105,7 @@
     </main>
     <div class="vertical-line"></div>
     <h2 class="project-heading">My Projects</h2>
-    <section class="projects">
+    <section class="projects" id="3">
       <div class="project-card">
         <div class="project-info">
           <h2>Image gallery with JS<br /></h2>
@@ -189,7 +203,7 @@
       <div class="vertical-line"></div>
     </section>
     <h2 class="skill-heading">My Skills</h2>
-    <section class="skills">
+    <section id="4" class="skills">
       <div class="skill-logo-cont">
         <img class="skill-logo" src="Assets/Python-logo-notext.svg" />
       </div>
@@ -213,27 +227,44 @@
     <button class="toggle-btn" onclick="toggleTheme()">
       <img id="theme-icon" src="Assets/moon.png" alt="Toggle theme" />
     </button>
-    <div class="vertical-line"></div>
-    <section class="contact-info">
-      <h2>Contact Details</h2>
-      <h3>Mail : joshidevyansh2105@gmail.com</h3>
-    </section>
+    <div style="height: 150px"></div>
+    <script>
+      const body = document.body;
+      const icon = document.getElementById("theme-icon");
+
+      function toggleTheme() {
+        body.classList.toggle("dark");
+        const isDark = body.classList.contains("dark");
+
+        icon.src = isDark ? "Assets/sun.png" : "Assets/moon.png";
+        icon.alt = isDark ? "Switch to light mode" : "Switch to dark mode";
+
+        const git = document.getElementById("git");
+        git.src = isDark
+          ? "Assets/github-mark-c791e9551fe4/github-mark/github-mark-white.png"
+          : "Assets/github-mark-c791e9551fe4/github-mark/github-mark.png";
+      }
+
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let currentId = "";
+
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 120 && rect.bottom >= 120) {
+            currentId = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentId}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
-  <script>
-    const body = document.body;
-    const icon = document.getElementById("theme-icon");
-
-    function toggleTheme() {
-      body.classList.toggle("dark");
-      const isDark = body.classList.contains("dark");
-
-      icon.src = isDark ? "Assets/sun.png" : "Assets/moon.png";
-      icon.alt = isDark ? "Switch to light mode" : "Switch to dark mode";
-
-      const git = document.getElementById("git");
-      git.src = isDark
-        ? "Assets/github-mark-c791e9551fe4/github-mark/github-mark-white.png"
-        : "Assets/github-mark-c791e9551fe4/github-mark/github-mark.png";
-    }
-  </script>
 </html>
