@@ -10,7 +10,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
@@ -43,7 +43,7 @@
       </div>
       <h1>
         Hello, This is <span class="font-bold">Devyansh Joshi.</span> I am a
-        <span class="font-bold">Software engineer</span> learning
+        <span class="font-bold">Software engineer</span> with expierience in
         ReactJS and Python
       </h1>
       <a href="https://github.com/Devyansh-Joshi" target="_blank"
@@ -87,20 +87,42 @@
             ><img class="logo" src="Assets/MPBSE.webp"
           /></a>
         </span>
+        <div class="vertical-line"></div>
       </section>
-      <div class="vertical-line"></div>
-      <h2>Work Expierience</h2>
-      <section class="work" id="2">
-        <h3>
-          <span class="font-bold">Afame Technologies.<br /></span>
-          Intern - Remote<br />
-          May 2024 - June 2024<br />
-          Built projects in team environment.<br />
-          Learned about using Git for collabrative projects.
-        </h3>
-        <a href="https://afame.in/" target="_blank"
-          ><img class="logo" src="Assets/Afame.jpeg"
-        /></a>
+      <h2>Work Experience</h2>
+      <section class="work-container" id="2">
+        <!-- First Work Experience -->
+        <div class="work">
+          <h3>
+            <span class="font-bold">Afame Technologies.<br /></span>
+            Intern - Remote<br />
+            May 2024 - June 2024<br />
+            Built projects in team environment.<br />
+            Learned about using Git for collaborative projects.
+          </h3>
+          <a href="https://afame.in/" target="_blank">
+            <img
+              class="logo"
+              src="Assets/Afame.jpeg"
+              alt="Afame Technologies Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Second Work Experience - NEW CARD -->
+        <div class="work">
+          <h3>
+            <span class="font-bold">Brainwave Matrix Solutions.<br /></span>
+            Intern - Remote<br />
+            April 2025 - July 2025<br />
+            Built a Day planner web app with JS with LocalStorage
+            functionality.<br />
+            Developed a blog web app using Node.
+          </h3>
+          <a href="https://matrixbrainwave.in.net/" target="_blank">
+            <img class="logo" src="Assets/Brainwave.jpeg" alt="Company Logo" />
+          </a>
+        </div>
       </section>
     </main>
     <div class="vertical-line"></div>
@@ -117,7 +139,7 @@
             experience.
           </p>
           <span class="project-btn">
-            <a href="Image Gallery/Image-Gallery/index.html"
+            <a href="Image Gallery/Image-Gallery/index.html" target="_blank"
               ><button>Live</button></a
             >
             <a
@@ -236,7 +258,9 @@
         body.classList.toggle("dark");
         const isDark = body.classList.contains("dark");
 
-        icon.src = isDark ? "Assets/sun.png" : "Assets/moon.png";
+        icon.src = isDark
+          ? "Assets/vecteezy_minimalist-white-sun-icon_60121562.png"
+          : "Assets/moon.png";
         icon.alt = isDark ? "Switch to light mode" : "Switch to dark mode";
 
         const git = document.getElementById("git");
