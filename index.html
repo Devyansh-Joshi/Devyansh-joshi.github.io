@@ -1,294 +1,336 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Devyansh Joshi Portfolio</title>
-    <meta name="author" content="Devyansh Joshi" />
-    <meta
-      name="description"
-      content="A web page portfolio for Devyansh Joshi showcasing personal information and academic qualifications"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style1.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="Assets/favicon_io/favicon-16x16.png"
-      type="image/x-icon"
-      sizes="any"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devyansh Joshi - Software Engineer</title>
+    <meta name="author" content="Devyansh Joshi">
+    <meta name="description" content="Portfolio of Devyansh Joshi - Software Engineer specializing in ReactJS and Python">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
   </head>
   <body>
-    <section class="intro" id="0">
-      <div class="nav">
+    <!-- Navigation -->
+    <nav class="nav">
         <ul>
-          <li><a href="#0" class="nav-link">Home</a></li>
-          <li><a href="#1" class="nav-link">Education</a></li>
-          <li><a href="#2" class="nav-link">Work</a></li>
-          <li><a href="#3" class="nav-link">Project</a></li>
-          <li><a href="#4" class="nav-link">Skills</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#work" class="nav-link">Work</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
         </ul>
-      </div>
-      <h1>
-        Hello, This is <span class="font-bold">Devyansh Joshi.</span> I am a
-        <span class="font-bold">Software engineer</span> with expierience in
-        ReactJS and Python
-      </h1>
-      <a href="https://github.com/Devyansh-Joshi" target="_blank"
-        ><button class="social-button">
-          GitHub
-          <i class="fab fa-github"></i></button
-      ></a>
+    </nav>
 
-      <a href="https://www.linkedin.com/in/devyanshjoshi/" target="_blank"
-        ><button class="social-button dark">
-          LinkedIn
-          <i class="fab fa-linkedin"></i></button
-      ></a>
-      <div class="mail">
-        <h3>joshidevyansh2105@gmail.com</h3>
-      </div>
-    </section>
-    <main class="background-info">
-      <div class="vertical-line"></div>
-      <h2>My Education</h2>
-      <section class="education" id="1">
-        <span class="clg-education">
-          <h3>
-            <span class="font-bold">Bachelor in Computer Science.<br /></span>
-            Institute of Engineering and Science, IPS<br />
-            Expected graduation 2026<br />
-            Current CGPA 7.5/10
-          </h3>
-          <a href="https://www.ipsacademy.org/" target="_blank"
-            ><img class="logo" src="Assets/IPS Logo.webp"
-          /></a>
-        </span>
-        <span class="sec-education">
-          <h3>
-            <span class="font-bold"> Higher Secondary Education.<br /> </span>
-            MPBSE<br />
-            PCM with Biology<br />
-            Graduated with 80%<br />
-          </h3>
-          <a href="https://www.mpbse.nic.in/" target="_blank"
-            ><img class="logo" src="Assets/MPBSE.webp"
-          /></a>
-        </span>
-        <div class="vertical-line"></div>
-      </section>
-      <h2>Work Experience</h2>
-      <section class="work-container" id="2">
-        <!-- First Work Experience -->
-        <div class="work">
-          <h3>
-            <span class="font-bold">Afame Technologies.<br /></span>
-            Intern - Remote<br />
-            May 2024 - June 2024<br />
-            Built projects in team environment.<br />
-            Learned about using Git for collaborative projects.
-          </h3>
-          <a href="https://afame.in/" target="_blank">
-            <img
-              class="logo"
-              src="Assets/Afame.jpeg"
-              alt="Afame Technologies Logo"
-            />
-          </a>
-        </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>
+                Hello, I'm <span class="highlight">Devyansh Joshi.</span><br>
+                A <span class="highlight">Software Engineer</span> with experience in ReactJS and Python
+            </h1>
+            
+            <div class="social-buttons">
+                <a href="https://github.com/Devyansh-Joshi" target="_blank" class="social-btn">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/devyanshjoshi/" target="_blank" class="social-btn dark">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
 
-        <!-- Second Work Experience - NEW CARD -->
-        <div class="work">
-          <h3>
-            <span class="font-bold">Brainwave Matrix Solutions.<br /></span>
-            Intern - Remote<br />
-            April 2025 - July 2025<br />
-            Built a Day planner web app with JS with LocalStorage
-            functionality.<br />
-            Developed a blog web app using Node.
-          </h3>
-          <a href="https://matrixbrainwave.in.net/" target="_blank">
-            <img class="logo" src="Assets/Brainwave.jpeg" alt="Company Logo" />
-          </a>
+            <div class="email-display">
+                <h3>joshidevyansh2105@gmail.com</h3>
+            </div>
         </div>
-      </section>
-    </main>
-    <div class="vertical-line"></div>
-    <h2 class="project-heading">My Projects</h2>
-    <section class="projects" id="3">
-      <div class="project-card">
-        <div class="project-info">
-          <h2>Image gallery with JS<br /></h2>
-          <span class="lang-logo"> Built using : JavaScript, HTML, CSS </span>
-          <p>
-            A simple image gallery web app that allows users to view thumbnails
-            and display larger versions of selected images. It also includes a
-            "Darken/Lighten" overlay toggle feature for better viewing
-            experience.
-          </p>
-          <span class="project-btn">
-            <a href="Image Gallery/Image-Gallery/index.html" target="_blank"
-              ><button>Live</button></a
-            >
-            <a
-              href="https://github.com/Devyansh-Joshi/Image-Gallery"
-              target="_blank"
-              ><button>Github</button></a
-            >
-          </span>
-        </div>
-        <div class="project-img">
-          <img src="Assets/img gallery.png" alt="Project preview" />
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-info">
-          <h2>Library Management System<br /></h2>
-          <span class="lang-logo"> Built using : Python, SQLite, Tkinter</span>
-          <p>
-            A complete library management system with GUI that allows users to
-            add, issue, return, and view books. It uses SQLite for local data
-            storage and Tkinter for the graphical interface.
-          </p>
-          <span class="project-btn">
-            <a
-              href="https://github.com/Devyansh-Joshi/Python-LMS"
-              target="_blank"
-              ><button>Github</button></a
-            >
-          </span>
-        </div>
-        <div class="project-img">
-          <img src="Assets/LMS.png" alt="Project preview" />
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-info">
-          <h2>Guess the Number with GUI<br /></h2>
-          <span class="lang-logo"> Built using : JAVA swing</span>
-          <p>
-            A Java-based GUI game built with Swing where the player attempts to
-            guess a randomly generated number within a limited number of
-            attempts. This project features interactive components, difficulty
-            settings, and helpful instructions—perfect as an internship showcase
-            or portfolio piece.
-          </p>
-          <span class="project-btn">
-            <a
-              href="https://github.com/Devyansh-Joshi/Guess_the_number"
-              target="_blank"
-              ><button>Github</button></a
-            >
-          </span>
-        </div>
-        <div class="project-img">
-          <img src="Assets/Guess_the_number.png" alt="Project preview" />
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-info">
-          <h2>Bouncing balls Animation<br /></h2>
-          <span class="lang-logo"> Built using : HTML, CSS, JavaScript</span>
-          <p>
-            A fun and interactive JavaScript canvas game where bouncing balls
-            move around the screen and collide with each other. Control an "evil
-            circle" using keyboard keys to eliminate the bouncing balls in
-            real-time!
-          </p>
-          <span class="project-btn">
-            <a href="Bouncing Ball/Bouncing-Ball-with-EC/index.html"
-              ><button>Live</button></a
-            >
-            <a
-              href="https://github.com/Devyansh-Joshi/Bouncing-Ball-with-EC"
-              target="_blank"
-              ><button>Github</button></a
-            >
-          </span>
-        </div>
-        <div class="project-img">
-          <img src="Assets/Bouncing ball.png" alt="Project preview" />
-        </div>
-      </div>
-      <div class="vertical-line"></div>
     </section>
-    <h2 class="skill-heading">My Skills</h2>
-    <section id="4" class="skills">
-      <div class="skill-logo-cont">
-        <img class="skill-logo" src="Assets/Python-logo-notext.svg" />
-      </div>
-      <div class="skill-logo-cont">
-        <img class="skill-logo" src="Assets/HTML5_Badge.svg" />
-      </div>
-      <div class="skill-logo-cont">
-        <img class="skill-logo" src="Assets/css.svg" />
-      </div>
-      <div class="skill-logo-cont">
-        <img class="skill-logo" src="Assets/JavaScript-logo.png" />
-      </div>
-      <div class="skill-logo-cont">
-        <img
-          id="git"
-          class="skill-logo"
-          src="Assets/github-mark-c791e9551fe4/github-mark/github-mark.png"
-        />
-      </div>
+
+    <div class="divider"></div>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">My Education</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <span class="title">Bachelor in Computer Science</span>
+                        <h3>
+                            Institute of Engineering and Science, IPS<br>
+                            Expected graduation 2026<br>
+                            Current CGPA 7.5/10
+                        </h3>
+                    </div>
+                    <div class="card-logo">
+                        <a href="https://www.ipsacademy.org/" target="_blank">
+                            <img class="logo" src="https://via.placeholder.com/80?text=IPS" alt="IPS Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <span class="title">Higher Secondary Education</span>
+                        <h3>
+                            MPBSE<br>
+                            PCM with Biology<br>
+                            Graduated with 80%
+                        </h3>
+                    </div>
+                    <div class="card-logo">
+                        <a href="https://www.mpbse.nic.in/" target="_blank">
+                            <img class="logo" src="https://via.placeholder.com/80?text=MPBSE" alt="MPBSE Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <button class="toggle-btn" onclick="toggleTheme()">
-      <img id="theme-icon" src="Assets/moon.png" alt="Toggle theme" />
+
+    <div class="divider"></div>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <span class="title">Afame Technologies</span>
+                        <h3>
+                            Intern - Remote<br>
+                            May 2024 - June 2024<br>
+                            Built projects in team environment<br>
+                            Learned about using Git for collaborative projects
+                        </h3>
+                    </div>
+                    <div class="card-logo">
+                        <a href="https://afame.in/" target="_blank">
+                            <img class="logo" src="https://via.placeholder.com/80?text=Afame" alt="Afame Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <span class="title">Brainwave Matrix Solutions</span>
+                        <h3>
+                            Intern - Remote<br>
+                            April 2025 - July 2025<br>
+                            Built a Day planner web app with JS and LocalStorage<br>
+                            Developed a blog web app using Node
+                        </h3>
+                    </div>
+                    <div class="card-logo">
+                        <a href="https://matrixbrainwave.in.net/" target="_blank">
+                            <img class="logo" src="https://via.placeholder.com/80?text=Brainwave" alt="Brainwave Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3>Image Gallery with JS</h3>
+                        <span class="tech-stack">JavaScript, HTML, CSS</span>
+                        <p>A simple image gallery web app that allows users to view thumbnails and display larger versions of selected images. Includes a "Darken/Lighten" overlay toggle feature for better viewing experience.</p>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Devyansh-Joshi/Image-Gallery" target="_blank" class="project-btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300?text=Image+Gallery" alt="Image Gallery Project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3>Library Management System</h3>
+                        <span class="tech-stack">Python, SQLite, Tkinter</span>
+                        <p>A complete library management system with GUI that allows users to add, issue, return, and view books. Uses SQLite for local data storage and Tkinter for the graphical interface.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Devyansh-Joshi/Python-LMS" target="_blank" class="project-btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300?text=Library+Management" alt="Library Management Project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3>Guess the Number with GUI</h3>
+                        <span class="tech-stack">Java Swing</span>
+                        <p>A Java-based GUI game built with Swing where the player attempts to guess a randomly generated number within a limited number of attempts. Features interactive components and difficulty settings.</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Devyansh-Joshi/Guess_the_number" target="_blank" class="project-btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300?text=Guess+the+Number" alt="Guess the Number Project">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-info">
+                        <h3>Bouncing Balls Animation</h3>
+                        <span class="tech-stack">HTML, CSS, JavaScript</span>
+                        <p>A fun and interactive JavaScript canvas game where bouncing balls move around the screen and collide with each other. Control an "evil circle" using keyboard keys to eliminate the bouncing balls in real-time!</p>
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn">Live Demo</a>
+                            <a href="https://github.com/Devyansh-Joshi/Bouncing-Ball-with-EC" target="_blank" class="project-btn">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300?text=Bouncing+Balls" alt="Bouncing Balls Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" id="github-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <img id="theme-icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23374151' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E" alt="Toggle theme">
     </button>
-    <div style="height: 150px"></div>
+
     <script>
-      const body = document.body;
-      const icon = document.getElementById("theme-icon");
+        // Theme Toggle
+        const body = document.body;
+        const themeIcon = document.getElementById('theme-icon');
+        const githubLogo = document.getElementById('github-logo');
 
-      function toggleTheme() {
-        body.classList.toggle("dark");
-        const isDark = body.classList.contains("dark");
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark');
+            updateThemeIcon(true);
+        }
 
-        icon.src = isDark
-          ? "Assets/vecteezy_minimalist-white-sun-icon_60121562.png"
-          : "Assets/moon.png";
-        icon.alt = isDark ? "Switch to light mode" : "Switch to dark mode";
+        function toggleTheme() {
+            body.classList.toggle('dark');
+            const isDark = body.classList.contains('dark');
+            
+            updateThemeIcon(isDark);
+            
+            // Save preference
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
 
-        const git = document.getElementById("git");
-        git.src = isDark
-          ? "Assets/github-mark-c791e9551fe4/github-mark/github-mark-white.png"
-          : "Assets/github-mark-c791e9551fe4/github-mark/github-mark.png";
-      }
+        function updateThemeIcon(isDark) {
+            if (isDark) {
+                themeIcon.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f1f5f9' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'%3E%3C/circle%3E%3Cline x1='12' y1='1' x2='12' y2='3'%3E%3C/line%3E%3Cline x1='12' y1='21' x2='12' y2='23'%3E%3C/line%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'%3E%3C/line%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'%3E%3C/line%3E%3Cline x1='1' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='21' y1='12' x2='23' y2='12'%3E%3C/line%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'%3E%3C/line%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'%3E%3C/line%3E%3C/svg%3E";
+                if (githubLogo) {
+                    githubLogo.src = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
+                    githubLogo.style.filter = "invert(1)";
+                }
+            } else {
+                themeIcon.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23374151' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E";
+                if (githubLogo) {
+                    githubLogo.src = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
+                    githubLogo.style.filter = "none";
+                }
+            }
+        }
 
-      const sections = document.querySelectorAll("section[id]");
-      const navLinks = document.querySelectorAll(".nav-link");
+        // Navigation Active State with Intersection Observer
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
 
-      window.addEventListener("scroll", () => {
-        let currentId = "";
+        const observerOptions = {
+            root: null,
+            rootMargin: '-100px 0px -66%',
+            threshold: 0
+        };
 
-        sections.forEach((section) => {
-          const rect = section.getBoundingClientRect();
-          if (rect.top <= 120 && rect.bottom >= 120) {
-            currentId = section.getAttribute("id");
-          }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    
+                    // Remove active class from all links
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    
+                    // Add active class to current section link
+                    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        sections.forEach(section => {
+            observer.observe(section);
         });
 
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${currentId}`) {
-            link.classList.add("active");
-          }
+        // Smooth scroll for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
-      });
     </script>
-  </body>
+</body>
 </html>
