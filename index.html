@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devyansh Joshi | Software Engineer</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <ul>
+        <li class="brand">DJ</li>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+      <div class="hero-content">
+        <h1>
+          Devyansh Joshi<br />
+          <span>Software Engineer</span>
+        </h1>
+
+        <p class="hero-sub">
+          React • Node • Python<br />
+          Building practical, API-driven web applications
+        </p>
+
+        <div class="social-buttons">
+          <a
+            href="https://github.com/Devyansh-Joshi"
+            target="_blank"
+            class="social-btn"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/devyanshjoshi/"
+            target="_blank"
+            class="social-btn dark"
+          >
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="#projects" class="social-btn"> View Projects </a>
+        </div>
+        <a
+          href="https://leetcode.com/u/Devyansh-Joshi/"
+          target="_blank"
+          class="social-btn leetcode-btn"
+          id="leetcode-btn"
+        >
+          <i class="fa-solid fa-code"></i>
+          LeetCode · <span id="leetcode-count">loading...</span>
+        </a>
+
+        <div class="email-display">joshidevyansh2105@gmail.com</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+
+      <div class="card">
+        <h3>B.Tech in Computer Science</h3>
+        <p>Institute of Engineering and Science, IPS</p>
+        <ul>
+          <li>Expected Graduation: 2026</li>
+          <li>CGPA: 7.5 / 10</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Higher Secondary (PCM + Biology)</h3>
+        <p>MPBSE</p>
+        <ul>
+          <li>Graduated with 80%</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="card">
+        <h3>Brainwave Matrix Solutions — Intern (Remote)</h3>
+        <p>Apr 2025 – Jul 2025</p>
+        <ul>
+          <li>Built a Day Planner web app using JavaScript & LocalStorage</li>
+          <li>Developed a blog backend using Node.js</li>
+          <li>Used Git & GitHub for collaboration</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Afame Technologies — Intern (Remote)</h3>
+        <p>May 2024 – Jun 2024</p>
+        <ul>
+          <li>Worked in team-based frontend projects</li>
+          <li>Learned collaborative Git workflows</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project-card">
+        <h3>Job Tracker - Full Stack Application</h3>
+        <span class="tech">Node.js • React.js • PostgreSQL</span>
+        <p>
+          A full-stack job tracking platform with secure authentication, Chrome
+          extension automation, and backend-driven analytics.
+        </p>
+        <ul>
+          <li>
+            Integrated a Chrome extension workflow using revocable, user-scoped
+            tokens, enabling one-click job imports from external job portals.
+          </li>
+          <li>
+            Developed server-side analytics including application funnels,
+            interview conversion rates, platform effectiveness, and tech stack
+            distribution.
+          </li>
+          <li>
+            Deployed the frontend on Vercel and backend on Render, with
+            environment-based configuration and automated database migrations.
+          </li>
+        </ul>
+        <div class="project-links">
+          <a href="https://job-tracker-ui-psi.vercel.app/">Live</a>
+          <a
+            href="https://github.com/Devyansh-Joshi/job-tracker-backend"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Travel Dashboard — Local Full-Stack Project</h3>
+        <span class="tech">HTML • CSS • JavaScript</span>
+        <p>
+          A full-stack travel dashboard that allows users to search cities, view
+          weather forecasts, explore nearby attractions on a map, create trips,
+          and check transport (flight) options — all running locally.
+        </p>
+        <ul>
+          <li>Interactive map view for attractions</li>
+          <li>View multi-day weather forecast</li>
+          <li>Explore nearby attractions</li>
+        </ul>
+        <div class="project-links">
+          <a
+            href="https://github.com/Devyansh-Joshi/Travel-Dashboard"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Image Gallery (JavaScript)</h3>
+        <span class="tech">HTML • CSS • JavaScript</span>
+        <p>Interactive image gallery with overlay and dark/light view.</p>
+        <ul>
+          <li>Thumbnail navigation</li>
+          <li>Overlay brightness toggle</li>
+          <li>Pure JavaScript implementation</li>
+        </ul>
+        <div class="project-links">
+          <a href="Image Gallery/Image-Gallery/index.html">Live</a>
+          <a
+            href="https://github.com/Devyansh-Joshi/Image-Gallery"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <span class="tech">Python • SQLite • Tkinter</span>
+        <p>Desktop GUI system for managing books and users.</p>
+        <ul>
+          <li>Add / Issue / Return books</li>
+          <li>SQLite local database</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Devyansh-Joshi/Python-LMS" target="_blank"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+          /><span>Python</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+          /><span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          /><span>React</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+          /><span>Node.js</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+          /><span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      © 2026 Devyansh Joshi • Built with HTML, CSS & JavaScript
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
